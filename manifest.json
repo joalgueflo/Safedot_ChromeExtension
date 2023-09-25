@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Safedot",
+    "version": "1.0",
+    "description": "Somos una plataforma de seguridad virtual especializada en la detección de: estafas, extorciones, fraudes y cyberataques  ",
+    "permissions": [
+    "activeTab",
+    "https://www.ipqualityscore.com/" 
+    ],
+    "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+        "16": "images/dotF.png",
+        "48": "images/dotF.png",
+        "128": "images/dotF.png"
+    }
+    },
+    "icons": {
+    "16": "images/dotF.png",
+    "48": "images/dotF.png",
+    "128": "images/dotF.png"
+    },
+    "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+        "16": "images/dotF.png",
+        "48": "images/dotF.png",
+        "128": "images/dotF.png"
+    }
+    },
+    "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }
+    ]
+}

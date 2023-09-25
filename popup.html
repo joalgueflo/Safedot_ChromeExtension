@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verificar URL</title>
+    <link rel="stylesheet" href="diseño.module.css">
+  </head>
+  <body>
+    <h1>Verificar URL</h1>
+    <label for="url-input">Ingresa la URL a verificar:</label>
+    <input
+      type="text"
+      id="url-input"
+      placeholder="Ejemplo: https://ejemplo.com"
+    />
+    <button id="check-button">Verificar</button>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+  </body>
+  <style>
+    body {
+    width: 300px;
+    background-color: #041F35; /* Fondo blanco para mejorar la legibilidad */
+    font-family: Helvetica;
+}
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+label {
+    color: #FFB600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #FFB600;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #008000; /* Color de fondo verde coherente */
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #ffffff; /* Texto en blanco para mejor legibilidad */
+}
+
+#result {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.suspicious {
+    color: #ff0000;
+    font-weight: bold; /* Hacer que el texto sea más audaz */
+}
+
+.phishing {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.safe {
+    color: #008000;
+    font-weight: bold;
+}
+  </style>
+</html>
